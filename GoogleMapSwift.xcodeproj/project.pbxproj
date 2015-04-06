@@ -26,6 +26,9 @@
 		857D68681A8A79D50025A551 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857D68671A8A79D50025A551 /* OpenGLES.framework */; };
 		857D686A1A8A79DD0025A551 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857D68691A8A79DD0025A551 /* QuartzCore.framework */; };
 		857D686C1A8A79E70025A551 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857D686B1A8A79E70025A551 /* SystemConfiguration.framework */; };
+		85978ED01AD2E26500B63AA5 /* CustomInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85978ECF1AD2E26500B63AA5 /* CustomInfoWindow.xib */; };
+		85978ED21AD2E31400B63AA5 /* CustomInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85978ED11AD2E31400B63AA5 /* CustomInfoWindow.swift */; };
+		85FE8AD61ACDC02200214571 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8AD51ACDC02200214571 /* GoogleMaps.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		857D68691A8A79DD0025A551 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		857D686B1A8A79E70025A551 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		857D686D1A8A7A640025A551 /* GoogleMapSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleMapSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		85978ECF1AD2E26500B63AA5 /* CustomInfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInfoWindow.xib; sourceTree = "<group>"; };
+		85978ED11AD2E31400B63AA5 /* CustomInfoWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInfoWindow.swift; sourceTree = "<group>"; };
+		85FE8AD51ACDC02200214571 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMapSwift/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				857D68651A8A79CF0025A551 /* libz.dylib */,
 				857D68631A8A79C90025A551 /* libicucore.dylib */,
 				857D68611A8A79BB0025A551 /* libc++.dylib */,
+				85FE8AD51ACDC02200214571 /* GoogleMaps.bundle */,
 				857D685F1A8A79B00025A551 /* ImageIO.framework */,
 				857D685D1A8A79AA0025A551 /* GLKit.framework */,
 				857D685B1A8A79A20025A551 /* CoreText.framework */,
@@ -131,6 +138,8 @@
 			children = (
 				857D68311A8A78F20025A551 /* AppDelegate.swift */,
 				857D68331A8A78F20025A551 /* ViewController.swift */,
+				85978ED11AD2E31400B63AA5 /* CustomInfoWindow.swift */,
+				85978ECF1AD2E26500B63AA5 /* CustomInfoWindow.xib */,
 				857D686D1A8A7A640025A551 /* GoogleMapSwift-Bridging-Header.h */,
 				857D68351A8A78F20025A551 /* Main.storyboard */,
 				857D68381A8A78F20025A551 /* Images.xcassets */,
@@ -246,9 +255,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85978ED01AD2E26500B63AA5 /* CustomInfoWindow.xib in Resources */,
 				857D68371A8A78F20025A551 /* Main.storyboard in Resources */,
 				857D683C1A8A78F20025A551 /* LaunchScreen.xib in Resources */,
 				857D68391A8A78F20025A551 /* Images.xcassets in Resources */,
+				85FE8AD61ACDC02200214571 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				857D68341A8A78F20025A551 /* ViewController.swift in Sources */,
+				85978ED21AD2E31400B63AA5 /* CustomInfoWindow.swift in Sources */,
 				857D68321A8A78F20025A551 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +486,7 @@
 				857D684D1A8A78F20025A551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		857D684E1A8A78F20025A551 /* Build configuration list for PBXNativeTarget "GoogleMapSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +495,7 @@
 				857D68501A8A78F20025A551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
